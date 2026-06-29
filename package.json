@@ -1,0 +1,14 @@
+{
+  "name": "lazycat-proxy-guide",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run dev -w @lazycat-proxy-guide/web",
+    "build": "npm run build -w @lazycat-proxy-guide/web",
+    "typecheck": "npm run typecheck -w @lazycat-proxy-guide/web"
+  },
+  "workspaces": [
+    "apps/*"
+  ]
+}

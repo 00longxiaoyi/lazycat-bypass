@@ -1,0 +1,17 @@
+[
+  {
+    "domain_suffix": [
+      "heiyu.space",
+      "lazycat.cloud"
+    ],
+    "ip_cidr": [
+      "6.6.6.6/32",
+      "2000::6666/128",
+      "fc03:1136:3800::/40"
+    ],
+    "process_name": [
+      "lzc-core"
+    ],
+    "outbound": "direct"
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "network": "tcp,udp",
+    "outboundTag": "direct",
+    "ip": ["2000::6666/128", "8.8.8.8/32"],
+    "domain": ["domain:heiyu.space", "domain:lazycat.cloud"],
+    "process": ["lzc-core", "懒猫微服"],
+    "enabled": true,
+    "remarks": "lazycat"
+  }
+]

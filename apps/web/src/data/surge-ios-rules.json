@@ -1,0 +1,6 @@
+[
+  "DOMAIN-SUFFIX,heiyu.space,DIRECT",
+  "DOMAIN-SUFFIX,lazycat.cloud,DIRECT",
+  "IP-CIDR,6.6.6.6/32,DIRECT,no-resolve",
+  "IP-CIDR6,fc03:1136:3800::/40,DIRECT,no-resolve"
+]
