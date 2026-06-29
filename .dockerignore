@@ -1,0 +1,14 @@
+.git
+.gitignore
+.github
+.agents
+.codex
+node_modules
+apps/*/node_modules
+apps/*/dist
+apps/*/dist.zip
+dist
+Dockerfile
+README.md
+npm-debug.log*
+.DS_Store
