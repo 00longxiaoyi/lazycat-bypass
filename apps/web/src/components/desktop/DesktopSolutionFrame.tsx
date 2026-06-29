@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import type { DeviceMode, ProxyApp } from "../../types/proxy";
+import { PageContainer } from "../shared/PageContainer";
 import { StepCard } from "../shared/StepCard";
 import { DesktopAppHeader } from "./DesktopAppHeader";
 import { DesktopConfigSnippetPanel } from "./DesktopConfigSnippetPanel";
@@ -43,7 +44,7 @@ export function DesktopSolutionFrame({
   const safeCurrentStep = steps?.length ? Math.min(currentStep, steps.length - 1) : 0;
 
   return (
-    <section className="mx-auto grid w-full max-w-[90rem] gap-6 px-4 py-8 lg:grid-cols-[35.5rem_minmax(0,1fr)]">
+    <PageContainer className="grid gap-6 py-8 lg:grid-cols-[35.5rem_minmax(0,1fr)]">
       <div className="space-y-6 self-start">
         <DesktopAppHeader app={app} onBack={onBack} />
         {beforeConfig}
@@ -58,6 +59,6 @@ export function DesktopSolutionFrame({
         {afterSteps}
         {children}
       </div>
-    </section>
+    </PageContainer>
   );
 }

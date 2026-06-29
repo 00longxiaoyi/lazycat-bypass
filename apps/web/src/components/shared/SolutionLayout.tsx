@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import type { ProxyApp } from "../../types/proxy";
+import { PageContainer } from "./PageContainer";
 import { ProxyAppIcon } from "./ProxyAppIcon";
 
 type SolutionLayoutProps = {
@@ -32,7 +33,7 @@ function AppHeader({ app, onBack }: { app: ProxyApp; onBack: () => void }) {
 
 export function SolutionLayout({ app, onBack, leftPanel, children }: SolutionLayoutProps) {
   return (
-    <section className="mx-auto w-full max-w-[90rem] px-3 py-4 sm:px-4 sm:py-8">
+    <PageContainer className="py-4 sm:py-8">
       <div className="space-y-4 lg:hidden">
         <AppHeader app={app} onBack={onBack} />
         <div className="space-y-4">{children}</div>
@@ -47,6 +48,6 @@ export function SolutionLayout({ app, onBack, leftPanel, children }: SolutionLay
 
         <div className="space-y-6">{children}</div>
       </div>
-    </section>
+    </PageContainer>
   );
 }

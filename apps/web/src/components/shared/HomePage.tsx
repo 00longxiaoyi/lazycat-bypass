@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import type { ProxyApp } from "../../types/proxy";
+import { PageContainer } from "./PageContainer";
 import { ProxyAppCard } from "./ProxyAppCard";
 
 type HomePageProps = {
@@ -9,7 +10,7 @@ type HomePageProps = {
 
 export function HomePage({ apps, beforeList }: HomePageProps) {
   return (
-    <section className="mx-auto w-full max-w-6xl px-3 py-5 sm:px-4 sm:py-12">
+    <PageContainer className="py-5 sm:py-12">
       {beforeList}
 
       <div className="grid gap-3 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -21,6 +22,6 @@ export function HomePage({ apps, beforeList }: HomePageProps) {
       {apps.length === 0 ? (
         <div role="status" className="alert mt-6 text-sm">当前设备暂时没有可用客户端。</div>
       ) : null}
-    </section>
+    </PageContainer>
   );
 }
